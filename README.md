@@ -27,7 +27,7 @@ AWS Cognito Identity Provider Serviceのユーザー向け機能をコマンド�
 - 以下のPythonパッケージ:
   ```
   boto3
-  qrcode
+  qrcode[pil]
   pyotp
   argparse
   ```
@@ -35,7 +35,7 @@ AWS Cognito Identity Provider Serviceのユーザー向け機能をコマンド�
 ## インストール
 
 ```bash
-pip install boto3 qrcode pyotp argparse
+pip install boto3 qrcode[pil] pyotp argparse
 ```
 
 ## 使用方法
@@ -87,9 +87,12 @@ python cognito_api_hack.py --help
 
 ## ライセンス
 
-MITライセンス
+Apache License Version 2.0
+
+このプロジェクトは[Apache License Version 2.0](LICENSE)の下で提供されています。
 
 ## 注意事項
 
 - このツールは aws.cognito.signin.user.admin スコープで利用可能な機能のみをサポートしています
 - 本番環境で使用する前に十分なテストを行ってください
+
